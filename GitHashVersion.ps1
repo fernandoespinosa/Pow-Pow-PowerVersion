@@ -1,4 +1,5 @@
-$branch = "%teamcity.build.branch%";
+$vcsRootId = "%vcs.root.id%";
+$branch = "%teamcity.build.vcs.branch.$vcsRootId%";
 $branch = $branch.Replace('/', '-');
 $hash = "%build.vcs.number%";
 $hash = $hash.Substring(0, 7);
