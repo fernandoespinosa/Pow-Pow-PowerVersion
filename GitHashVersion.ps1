@@ -1,7 +1,7 @@
 $vcsRootId = "%vcs.root.id%";
 $branch = "%teamcity.build.vcs.branch.$vcsRootId%";
 $branch = $branch.Replace('/', '-');
-$hash = "%build.vcs.number%";
+$hash = "%build.vcs.number.$vcsRootId%";
 $hash = $hash.Substring(0, 7);
 $counter = "%build.counter%";
 $version = "$counter-$branch.$hash";
