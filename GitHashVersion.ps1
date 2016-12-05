@@ -1,15 +1,5 @@
-Param([string]$branch, [string]$revision, [string]$buildCounter);
+Param([string]$powpowBranch, [string]$powpowRevision, [string]$buildCounter);
 
-$vcsrootBranch = "%vcsroot.branch%";
-Write-Host "<vcsroot.branch>: $vcsrootBranch";
-
-Write-Host "<env:VCSROOT_BRANCH>: $env:VCSROOT_BRANCH";
-Write-Host "<env:TEAMCITY_BUILD_BRANCH>: $env:TEAMCITY_BUILD_BRANCH";
-
-Write-Host "<env:BUILD_VCS_NUMBER>: $env:BUILD_VCS_NUMBER";
-
-Write-Host "===========================";
-
-Write-Host "<branch>: $branch";
-Write-Host "<revision>: $revision";
+Write-Host "<powpowBranch>: $powpowBranch";
+Write-Host "<powpowRevision>: $powpowRevision";
 Write-Host "<buildCounter>: $buildCounter";
