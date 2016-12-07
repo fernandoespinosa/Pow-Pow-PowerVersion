@@ -21,3 +21,5 @@ Write-Host "<version>: $version";
 
 Write-Host "##teamcity[setParameter name='version' value='$version']";
 Write-Host "##teamcity[buildNumber '$version']";
+
+#FOO
